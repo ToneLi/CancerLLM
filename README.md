@@ -76,3 +76,7 @@ CUDA_VISIBLE_DEVICES=5,6,8 torchrun --nproc_per_node 2 pretraining.py \
   "response": "2.5",
 }
 ```
+
+
+####  How to fine tuning:
+
