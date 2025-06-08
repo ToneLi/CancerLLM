@@ -57,3 +57,22 @@ CUDA_VISIBLE_DEVICES=5,6,8 torchrun --nproc_per_node 2 pretraining.py \
   --cache_dir ./cache
 
 ```
+
+###   Instruction tuning
+####  Data format 
+##### Synthetic example  for cancer  diagnosis generation:
+```
+{
+  "instruction": "You are a medical expert. This task involves generating the diagnosis based on the provided context or text.",
+  "context": "1) Reason for visit: The patient reports a persistent cough and unintended weight loss over the past two months. 2) Treatment site: Right upper lobe of the lung. 3) Subjective information: The patient complains of shortness of breath, chest discomfort, and fatigue. 4) Nursing Review of Systems (ROS): Positive for night sweats, mild fever, and decreased appetite. 5) Objective observations: Decreased breath sounds and dullness to percussion on the right lung. 6) Laboratory test results: Chest X-ray reveals a mass in the right upper lobe; biopsy confirms malignant cells.",
+  "response": "lung cancer"
+}
+```
+##### Synthetic example for cancer phenotypes extraction:
+```
+{
+  "instruction": "You are an excellent linguist. The task is to answer the question by given the context or text",
+  "context": "In the text: The specimen shows a 2.5 cm firm white lesion located in the upper outer quadrant of the breast. What is the tumor size in the given context?",
+  "response": "2.5",
+}
+```
