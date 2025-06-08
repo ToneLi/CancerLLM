@@ -89,5 +89,5 @@ CUDA_VISIBLE_DEVICES=2 python generation.py
 """
 ```
 ###   Evaluation
-enter the evualtion,  run the 0_make_standard_output_for_ground.py and 1_make_standard_output_for_diagnosis.py and run the 2_evaluation_of_three_evualtion.py get the final results.
+To perform evaluation, run 0_make_standard_output_for_ground.py and 1_make_standard_output_for_diagnosis.py, followed by 2_evaluation_of_three_evaluation.py to obtain the final results.
 
