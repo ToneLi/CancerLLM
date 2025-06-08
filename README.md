@@ -78,9 +78,9 @@ CUDA_VISIBLE_DEVICES=5,6,8 torchrun --nproc_per_node 2 pretraining.py \
 ```
 
 
-####  How to fine-tune:
+####  How to fine-tune and generate  the answer:
 
-Run the following code to perform training the model and generate the answers:
+Run the following code to train the model and generate the answers:
 
 ```
 """
