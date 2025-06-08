@@ -1,9 +1,9 @@
 import json
 
-fw = open("ADInt_test_source_MCTS_3000_few_shot_entity_relation_sdantard.jsonl", "w",encoding="utf-8")
+fw = open("...jsonl", "w",encoding="utf-8")
 
 i=-1
-with open("ADInt_test_source_MCTS_3000_few_shot_entity_relation.json","r",encoding="utf-8") as f:
+with open(".....json","r",encoding="utf-8") as f:
     for line in f:
         input_json = json.loads(line)
         i=i+1
