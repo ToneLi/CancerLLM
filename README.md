@@ -88,4 +88,6 @@ CUDA_VISIBLE_DEVICES=9 nohup python cancerLLM_down_stream_fine_tuning.py > myout
 CUDA_VISIBLE_DEVICES=2 python generation.py
 """
 ```
+###   Evaluation
+enter the evualtion,  run the 0_make_standard_output_for_ground.py and 1_make_standard_output_for_diagnosis.py and run the 2_evaluation_of_three_evualtion.py get the final results.
 
