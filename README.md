@@ -78,5 +78,14 @@ CUDA_VISIBLE_DEVICES=5,6,8 torchrun --nproc_per_node 2 pretraining.py \
 ```
 
 
-####  How to fine tuning:
+####  How to fine-tune:
+
+Run the following code to perform training the model and generate the answers:
+
+```
+"""
+CUDA_VISIBLE_DEVICES=9 nohup python cancerLLM_down_stream_fine_tuning.py > myout.cancerLLM_down_stream_fine_tuning 2>&1 &
+CUDA_VISIBLE_DEVICES=2 python generation.py
+"""
+```
 
